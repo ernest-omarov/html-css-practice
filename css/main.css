@@ -1,0 +1,50 @@
+@font-face {
+    font-family:lobster;
+    src: url("../fonts/lobster.woff") format("woff"),url("../fonts/lobster.woff2") format("woff2");
+}
+body{ 
+    font-family:lobster;
+}
+h1 {
+    text-align:center;
+    font-weight:normal;
+    font-size:200%;
+    color:#c00;
+}
+
+strong {
+    font-style:italic;
+    font-weight:normal;
+}
+em {
+    font-style:normal;
+}
+p {
+    line-height:150%;
+    text-indent:20px;
+}
+.solo {
+    text-decoration: underline;
+    text-indent: 0;
+}
+.thr {
+    text-decoration: line-through;
+    text-indent: 0;
+    font-weight: lighter;
+}
+a {
+    text-decoration: none;
+    color:#ff67;
+    font-size: 200%;
+}
+.upper {
+    text-transform: uppercase;    
+}
+.lower {
+    text-transform: lowercase;
+}
+.shadow {
+    text-shadow:5px 4px 5px #555;
+    font-size: 300%;
+    text-indent: 0;
+}

@@ -1,0 +1,507 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#first_block {
+    margin: 0;
+    height: 800px;
+    width: 100%;
+    background: url("../images/background_photo.jpg") no-repeat;
+    background-size: cover;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(71, 71, 71,0.3);
+    height: 100px;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+}
+
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 200px;
+}
+
+.links {
+    font-size: 25px;
+    position: relative;
+    left: 900px;
+    top: 30px;
+}
+
+.nav_links {
+    display: inline-block;
+    position: relative;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+.nav_links:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    background-color: rgb(100, 0, 0);
+    transition-duration: 0.3s;
+    transform: translateX(-50%); 
+}
+
+.nav_links:hover:after {
+    width: 100%;
+}
+
+.links>a:hover {
+    color: rgb(100, 0, 0);
+}
+
+.titles {
+    position: relative;
+    top: 200px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 120px;
+    color: rgb(255, 255, 255);
+}
+
+span {
+    color: rgb(105, 5, 5);
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-bottom: 60px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+#prupose {
+    margin: 0;
+    height: 600px;
+    width: 100%;
+    background-color: #000;
+}
+
+h2 {
+    margin: 0;
+    padding: 40px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+}
+
+.container_second {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.responsive {
+    margin: 15px;
+    padding: 10px;
+    height: 300px;
+    width: 255px;
+    border: 2px solid red;
+    transition-duration: 0.4s;
+}
+
+.responsive:nth-child(3){
+    padding-bottom: 0;
+    padding-top: 20px;
+}
+
+.responsive:nth-child(4){
+    padding-bottom: 0;
+    padding-top: 20px;
+}
+
+.responsive:hover {
+    border: 2px solid white;
+}
+
+h4{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+}
+
+p {
+    color: rgb(255, 255, 255);
+}
+
+.responsive a {
+    height: 30px;
+    width: 70px;
+    background-color: red;
+    color: white;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 85px;
+}
+
+.responsive a:hover {
+    background-color: white;
+    color: black;
+}
+
+#team {
+    height: 900px;
+    width: 100%;
+    background: url("../images/bc.jpg") no-repeat;
+    background-size: cover;
+}
+
+.third_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.persons {
+    padding: 30px;
+    position: relative;
+
+}
+
+.persons:before {
+    content: "";
+    height: 5px;
+    width: 80%;
+    position: absolute;
+    top: 320px;
+    background-color: red;
+}
+
+.persons:after {
+    content: "";
+    height: 0;
+    width: 0;
+    border: 20px solid transparent;
+    border-top: 20px solid red;
+    position: absolute;
+    top: 320px;
+    left: 40%;
+    transition-duration: 0.5s;
+}
+
+.persons:hover:after {
+    opacity: 0;
+    top: 330px;
+}
+
+.persons:hover:before {
+    display: none;
+}
+
+.persons:hover .block_icons {
+    opacity: 1;
+    bottom: 50px;
+}
+
+h5 {
+    padding: 5px;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.persons p {
+    font-size: 20px;
+}
+
+.block_icons {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0;
+    transition-duration: 0.5s;
+    bottom: 0;
+    transform: translateY(50px);
+}
+
+.block_icons:after{
+    content: "";
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    bottom: 0;
+}
+
+.icons {
+    color: red;
+    text-shadow: 1px 1px 1px red;
+}
+
+.icons:hover {
+    color: white;
+}
+
+.progress {
+    margin: 0;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.progress h2 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.block_1 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first_progress {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 13px;
+    width: 50%;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.red_color_1 { 
+    position: relative;
+    left: 80%;
+    height: 13px;
+    width: 20%;
+    background-color: red;
+    border-radius: 0 15px 15px 0;
+}
+
+.red_color_2 {
+    position: relative;
+    left: 90%;
+    height: 13px;
+    width: 10%;
+    background-color: red;
+    border-radius: 0 15px 15px 0;
+}
+
+.red_color_3 {
+    position: relative;
+    left: 85%;
+    height: 13px;
+    width: 15%;
+    background-color: red;
+    border-radius: 0 15px 15px 0;
+}
+
+.red_color_4 {
+    position: relative;
+    height: 13px;
+    width: 20%;
+    left: 80%;
+    background-color: red;
+    border-radius: 0 15px 15px 0;
+}
+.block_1 h5:first-child {
+    position: relative;
+    width: 15%;
+}
+
+.block_1 h5:last-child {
+    padding-left: 30px;
+}
+
+
+.buttoms_top {
+    height: 300px;
+    padding-top: 50px;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;;
+}
+
+.buttoms_top h5 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.text {
+    font-size: 16px;
+    text-align: center;
+    margin: 10px;
+    width: 70%;
+}
+
+.main_buttoms {
+    margin;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttoms {
+    margin: 10px;
+    height: 50px;
+    width: 200px;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+.buttoms:hover {
+    background-color: red;
+}
+
+.pictures {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.picture_1 {
+    margin: 0;
+    padding: 0;
+    height: 300px;
+    width: 300px;
+    position: relative;
+}
+
+.background_red {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(201, 7, 7, 0.6);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+.background_red:hover {
+    opacity: 1;
+}
+
+.picture_1:hover a {
+    opacity: 1;
+    top: 150px;
+}
+
+.picture_1 a {
+    padding: 5px;
+    background-color: black;
+    color: white;
+    transition-duration: 0.5s;
+    opacity: 0;
+    position: absolute;
+    top: 140px;
+}
+
+.picture_1 a:hover {
+    background-color: red;
+}
+
+#prices {
+    position: relative;
+    height: 1050px;
+    width: 100%;
+    background-color: #000;
+}
+
+#prices h5 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.prices {
+    position: absolute;
+    top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price_list {
+    position: relative;
+    margin: 15px;
+    height: 650px;
+    width: 23%;
+    background-color: white;
+}
+
+.price_list p {
+    color: #000;
+}
+
+
+.price_top {
+    position: absolute;
+    background-color: red;
+    height: 35%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.3s;
+}
+
+.price_top:hover {
+    background-color: rgb(58, 58, 58);
+}
+
+.price_top h6 {
+    font-size: 20px;
+    color: white;
+    margin: 0;
+}
+
+.price_top i {
+    font-size: 40px;
+    color: white;
+    margin: 30px 0;
+}
+
+.price_top p {
+    font-size: 25px;
+    margin: 0;
+}

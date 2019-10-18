@@ -1,0 +1,21 @@
+.block_1 {
+    background-color: red;
+    height: 100px;
+    width: 50%;
+    transition-duration: 0.5s;
+    position: relative;
+    transform: translateX(50px);
+}
+
+.block_1:hover {
+    width: 100%;
+    left: 0;
+}
+
+.block_2 {
+    height: 0;
+    width: 0;
+    border: 30px solid transparent;
+    border-left: 30px solid green;
+}
+
